@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Font Changer</title>
+  </head>
+  <style>
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    hr {
+        width:25%;
+    }
+   
+  </style>
+  <body>
+    <h1>Welcome</h1>
+    <hr>
+    <h2>Text With your Font</h2>
+    <hr>
+    <form>
+    <h3>Sign Up Form</h3>
+    <section style="border:2px solid black;width:30%;">
+       <div>
+        <label id="text-input" for="firstname">
+       <input type="text" placeholder="First name" name="firstname" required>
+       </label>
+       <label for="lastname">
+        <input type="text" placeholder="last name" name="lastname" required>
+       </label>
+       </div>
+       <div>
+        <label for="mail">
+        <input type="username" placeholder="Username" name="mail">
+        </label>
+       </div>
+       <div>
+       <label for="mobile number or email address">
+       <input type="text" placeholder="Mobile number or email address" name="mobile number or email address" > 
+       </label>
+       </div>
+       <div>
+        <label for="pas">
+        <input type="password" placeholder="New password" name="pas" required>  
+        </label>  
+       </div>
+       <div>
+        <button type="submit" value="save" onclick="signup()" >Sign up</button>
+       </div>
+    </section>
+    </form>
+      
+      <p id="text"></p>
+      
+      <script>
+        function signup () {
+          var textInput = document.getElementById("text-input");
+          var text = textInput.value;
+          document.getElementById("text").innerHTML = Success;
+        }
+      </script>
+      
+  </body>
+</html>
+
